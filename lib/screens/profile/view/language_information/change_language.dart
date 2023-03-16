@@ -1,9 +1,9 @@
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/base/view/base_view.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/base/view/base_view.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/init/languages/languages_manager.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/widgets/list_tile/custom_list_tile.dart';
+import 'package:newstreet_app/core/init/languages/languages_manager.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/widgets/list_tile/custom_list_tile.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 class ChangeLanguage extends BaseView {
@@ -35,7 +35,8 @@ class _ChangeLanguageState extends BaseState<ChangeLanguage> {
             ),
             onTap: () {
               setState(() {
-                context.setLocale(LanguagesManager.instance.supportedLocales[index]);
+                context.setLocale(
+                    LanguagesManager.instance.supportedLocales[index]);
               });
             },
           );

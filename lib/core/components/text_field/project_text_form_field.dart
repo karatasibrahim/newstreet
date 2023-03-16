@@ -1,8 +1,8 @@
-import 'package:piton_taxi_app/core/extensions/string/string_extension.dart';
-import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/extensions/string/string_extension.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
 
 class ProjectTextFormField extends StatelessWidget {
   final InputBorder border;
@@ -53,8 +53,7 @@ class ProjectTextFormField extends StatelessWidget {
       this.autoValidateMode,
       this.alignment,
       this.focusNode,
-        this.autofocus
-      })
+      this.autofocus})
       : super(key: key);
 
   @override
@@ -66,12 +65,15 @@ class ProjectTextFormField extends StatelessWidget {
       decoration: InputDecoration(
         errorStyle: errorStyle ?? TextStyle(height: 0),
         border: border ?? InputBorder.none,
-        enabledBorder: enabledBorder ?? context.inputDecorationTheme.enabledBorder,
-        focusedBorder: focusedBorder ?? context.inputDecorationTheme.focusedBorder,
+        enabledBorder:
+            enabledBorder ?? context.inputDecorationTheme.enabledBorder,
+        focusedBorder:
+            focusedBorder ?? context.inputDecorationTheme.focusedBorder,
         errorBorder: errorBorder ?? InputBorder.none,
         disabledBorder: disabledBorder ?? InputBorder.none,
         contentPadding: contentPadding ?? null,
-        hintStyle: context.textTheme.headline6.copyWith(color: Colors.grey.shade600),
+        hintStyle:
+            context.textTheme.headline6.copyWith(color: Colors.grey.shade600),
         hintText: (hintText ?? LocaleKeys.general_enter).locale,
         suffixIcon: suffixIcon ?? null,
         prefixIcon: prefixIcon ?? null,

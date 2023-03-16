@@ -1,10 +1,10 @@
-import 'package:piton_taxi_app/core/components/container/white_container_with_shadow.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/divider_extension.dart';
-import 'package:piton_taxi_app/core/init/navigation/navigation_service.dart';
-import 'package:piton_taxi_app/screens/trips/model/dummy_trip_model.dart';
-import 'package:piton_taxi_app/core/constants/enums/routes.dart';
+import 'package:newstreet_app/core/components/container/white_container_with_shadow.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/extensions/context/divider_extension.dart';
+import 'package:newstreet_app/core/init/navigation/navigation_service.dart';
+import 'package:newstreet_app/screens/trips/model/dummy_trip_model.dart';
+import 'package:newstreet_app/core/constants/enums/routes.dart';
 import 'package:flutter/material.dart';
 import 'trip_card_title.dart';
 import 'trip_card_body.dart';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/components/button/project_circular_button.dart';
+import 'package:newstreet_app/core/components/button/project_circular_button.dart';
 
 class MenuIconButton extends StatelessWidget {
   final VoidCallback onPressed;
@@ -9,7 +9,12 @@ class MenuIconButton extends StatelessWidget {
   final double size;
 
   const MenuIconButton(
-      {Key key, @required this.onPressed, this.icon, this.color, this.child, this.size})
+      {Key key,
+      @required this.onPressed,
+      this.icon,
+      this.color,
+      this.child,
+      this.size})
       : super(key: key);
 
   @override

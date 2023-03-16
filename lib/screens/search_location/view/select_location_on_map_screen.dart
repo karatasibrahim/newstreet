@@ -1,14 +1,14 @@
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/screens/search_location/utils/select_location_on_map_provider.dart';
-import 'package:piton_taxi_app/screens/search_location/model/location_model.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/base/view/map_base_view.dart';
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
-import 'package:piton_taxi_app/core/extensions/maps/maps_extension.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/screens/search_location/utils/select_location_on_map_provider.dart';
+import 'package:newstreet_app/screens/search_location/model/location_model.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/base/view/map_base_view.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/core/extensions/maps/maps_extension.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:piton_taxi_app/core/init/navigation/pages_import.dart';
-import 'package:piton_taxi_app/widgets/buttons/amber_button.dart';
+import 'package:newstreet_app/core/init/navigation/pages_import.dart';
+import 'package:newstreet_app/widgets/buttons/amber_button.dart';
 import 'package:provider/provider.dart';
 
 class SelectLocationOnMapScreen extends MapBaseView {

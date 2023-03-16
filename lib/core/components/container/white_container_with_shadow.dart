@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:piton_taxi_app/core/constants/app/constants.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/constants/app/constants.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
 import 'package:flutter/material.dart';
 
 class WhiteContainerWithShadow extends StatelessWidget {

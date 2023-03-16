@@ -1,8 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:piton_taxi_app/screens/profile/model/user_model.dart';
+import 'package:newstreet_app/screens/profile/model/user_model.dart';
 
 void main() {
-
   final User user = User(
       nameSurname: "John Doe",
       email: "johndoe@hotmail.com",
@@ -17,9 +16,7 @@ void main() {
   });
 
   test("Is adding a new address in another addresses map", () {
-
     expect(user.anotherAddresses.isNotEmpty, true);
     expect(user.anotherAddresses.length, 1);
-  }
-  );
+  });
 }

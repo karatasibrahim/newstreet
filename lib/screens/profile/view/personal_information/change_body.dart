@@ -1,11 +1,11 @@
-import 'package:piton_taxi_app/core/extensions/context/sized_box_extension.dart';
-import 'package:piton_taxi_app/core/components/button_bar/project_button_bar.dart';
-import 'package:piton_taxi_app/core/components/text_field/project_text_field.dart';
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
-import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/extensions/context/sized_box_extension.dart';
+import 'package:newstreet_app/core/components/button_bar/project_button_bar.dart';
+import 'package:newstreet_app/core/components/text_field/project_text_field.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/widgets/general/get_phone_number.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/widgets/general/get_phone_number.dart';
 
 class ChangeBody extends StatefulWidget {
   final Function(String) onChanged;

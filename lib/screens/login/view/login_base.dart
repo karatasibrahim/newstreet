@@ -1,11 +1,11 @@
-import 'package:piton_taxi_app/core/components/image/project_image.dart';
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
-import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
-import 'package:piton_taxi_app/core/constants/images/image_constants.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/components/image/project_image.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/constants/images/image_constants.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/sized_box_extension.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/extensions/context/sized_box_extension.dart';
 
 class LoginBase extends StatelessWidget {
   final String title;

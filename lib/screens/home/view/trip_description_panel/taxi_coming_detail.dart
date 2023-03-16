@@ -1,21 +1,21 @@
-import 'package:piton_taxi_app/core/components/container/white_container_with_shadow.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/components/button/project_circular_button.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/screens/home/utils/google_map_provider.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/constants/images/image_constants.dart';
-import 'package:piton_taxi_app/core/constants/dummy_data/dummy_data.dart';
-import 'package:piton_taxi_app/core/extensions/context/sized_box_extension.dart';
-import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
-import 'package:piton_taxi_app/core/components/image/project_image.dart';
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
-import 'package:piton_taxi_app/core/init/navigation/pages_import.dart';
-import 'package:piton_taxi_app/widgets/image/circle_image.dart';
+import 'package:newstreet_app/core/components/container/white_container_with_shadow.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/components/button/project_circular_button.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/screens/home/utils/google_map_provider.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/constants/images/image_constants.dart';
+import 'package:newstreet_app/core/constants/dummy_data/dummy_data.dart';
+import 'package:newstreet_app/core/extensions/context/sized_box_extension.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/components/image/project_image.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/core/init/navigation/pages_import.dart';
+import 'package:newstreet_app/widgets/image/circle_image.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:piton_taxi_app/core/extensions/maps/maps_extension.dart';
-import 'package:piton_taxi_app/core/extensions/string/string_extension.dart';
+import 'package:newstreet_app/core/extensions/maps/maps_extension.dart';
+import 'package:newstreet_app/core/extensions/string/string_extension.dart';
 
 class TaxiComingDetail extends StatefulWidget {
   @override
@@ -70,7 +70,8 @@ class _TaxiComingDetailState extends State<TaxiComingDetail> {
                   Consumer<GoogleMapProvider>(
                       builder: (context, mapModel, child) => ProjectTextLocale(
                             text: mapModel.dummyDuration.toInt().toString() +
-                                " " + LocaleKeys.general_minute.locale,
+                                " " +
+                                LocaleKeys.general_minute.locale,
                             style:
                                 theme.headline5.copyWith(color: Colors.black87),
                           ))
@@ -82,9 +83,27 @@ class _TaxiComingDetailState extends State<TaxiComingDetail> {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            _getButtons((){}, ProjectImage(imagePath: ImageConstants.PHONE_ICON, width: 40,), LocaleKeys.taxiComing_menu_callLabel),
-            _getButtons((){}, ProjectImage(imagePath: ImageConstants.MESSAGE_ICON, width: 40,), LocaleKeys.taxiComing_menu_messageLabel),
-            _getButtons(() => context.mapProvider.clearAll(), Icon(Icons.clear, size: 40,), LocaleKeys.button_labels_cancel)
+            _getButtons(
+                () {},
+                ProjectImage(
+                  imagePath: ImageConstants.PHONE_ICON,
+                  width: 40,
+                ),
+                LocaleKeys.taxiComing_menu_callLabel),
+            _getButtons(
+                () {},
+                ProjectImage(
+                  imagePath: ImageConstants.MESSAGE_ICON,
+                  width: 40,
+                ),
+                LocaleKeys.taxiComing_menu_messageLabel),
+            _getButtons(
+                () => context.mapProvider.clearAll(),
+                Icon(
+                  Icons.clear,
+                  size: 40,
+                ),
+                LocaleKeys.button_labels_cancel)
           ],
         )
       ],
@@ -92,11 +111,19 @@ class _TaxiComingDetailState extends State<TaxiComingDetail> {
   }
 
   _getButtons(VoidCallback onTap, Widget child, String text) {
-    final textStyle = context.textTheme.headline6.copyWith(color: Colors.black87);
+    final textStyle =
+        context.textTheme.headline6.copyWith(color: Colors.black87);
     return Column(
       children: [
-      ProjectCircularButton(onPressed: onTap, child: child, color: Colors.white,),
-        ProjectTextLocale(text: text, style: textStyle,)
+        ProjectCircularButton(
+          onPressed: onTap,
+          child: child,
+          color: Colors.white,
+        ),
+        ProjectTextLocale(
+          text: text,
+          style: textStyle,
+        )
       ],
     );
   }

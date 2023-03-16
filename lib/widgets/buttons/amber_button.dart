@@ -1,17 +1,16 @@
-import 'package:piton_taxi_app/core/extensions/string/string_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/components/button/project_elevated_button.dart';
-import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/extensions/string/string_extension.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/components/button/project_elevated_button.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
 
 class AmberButton extends StatelessWidget {
   final VoidCallback onPressed;
   final String text;
   final double width;
 
-  const AmberButton(
-      {Key key, @required this.onPressed, this.text, this.width})
+  const AmberButton({Key key, @required this.onPressed, this.text, this.width})
       : super(key: key);
 
   @override

@@ -1,11 +1,11 @@
-import 'package:piton_taxi_app/core/constants/methods/input_formatter.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/components/text_field/project_text_form_field.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/components/text_validator.dart';
+import 'package:newstreet_app/core/constants/methods/input_formatter.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/components/text_field/project_text_form_field.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/components/text_validator.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
 
 class PhoneNumberWidget extends StatelessWidget {
   static final _formKey = GlobalKey<FormState>();
@@ -17,7 +17,9 @@ class PhoneNumberWidget extends StatelessWidget {
   PhoneNumberWidget(
       {Key key,
       @required this.onChanged,
-      this.validator, this.fNode, this.onSaved})
+      this.validator,
+      this.fNode,
+      this.onSaved})
       : super(key: key);
 
   @override
@@ -33,7 +35,7 @@ class PhoneNumberWidget extends StatelessWidget {
             _formKey.currentState.validate();
             return onChanged(phone);
           },
-          validator: (phone){
+          validator: (phone) {
             validator(TextValidator.phoneValidation(phone));
           },
           onSaved: (text) => onSaved(text),
@@ -41,9 +43,7 @@ class PhoneNumberWidget extends StatelessWidget {
           focusedBorder: InputBorder.none,
           keyboardType: TextInputType.number,
           hintText: LocaleKeys.login_phoneNumberHint,
-          textFormatter: [
-            InputFormatter.instance.phoneFormatter
-          ],
+          textFormatter: [InputFormatter.instance.phoneFormatter],
         ),
       ),
     );

@@ -1,8 +1,8 @@
 import 'file:///C:/Users/ibrah/Documents/GitHub/newstreet/lib/core/init/focus_node/otp_dialog_focus_nodes.dart';
 
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/components/text_field/project_text_form_field.dart';
-import 'package:piton_taxi_app/core/constants/app/constants.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/components/text_field/project_text_form_field.dart';
+import 'package:newstreet_app/core/constants/app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

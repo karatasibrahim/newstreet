@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'file:///C:/Users/ibrah/Documents/GitHub/newstreet/lib/core/constants/dummy_data/dummy_data.dart';
-import 'package:piton_taxi_app/screens/trips/view/trip_card.dart';
+import 'package:newstreet_app/screens/trips/view/trip_card.dart';
 
 class CompletedPage extends StatefulWidget {
   @override

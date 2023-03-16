@@ -1,11 +1,11 @@
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/sized_box_extension.dart';
-import 'package:piton_taxi_app/core/constants/enums/routes.dart';
-import 'package:piton_taxi_app/core/base/view/base_view.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/core/constants/images/image_constants.dart';
-import 'package:piton_taxi_app/core/init/navigation/navigation_service.dart';
-import 'package:piton_taxi_app/widgets/list_tile/custom_list_tile.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/extensions/context/sized_box_extension.dart';
+import 'package:newstreet_app/core/constants/enums/routes.dart';
+import 'package:newstreet_app/core/base/view/base_view.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/constants/images/image_constants.dart';
+import 'package:newstreet_app/core/init/navigation/navigation_service.dart';
+import 'package:newstreet_app/widgets/list_tile/custom_list_tile.dart';
 import 'package:flutter/material.dart';
 
 class PaymentMenu extends BaseView {

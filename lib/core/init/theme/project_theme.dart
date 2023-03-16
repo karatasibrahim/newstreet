@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/constants/theme/light_theme.dart';
+import 'package:newstreet_app/core/constants/theme/light_theme.dart';
 
 class ProjectThemeData extends ChangeNotifier {
   ThemeData _themeData;
 
-  ProjectThemeData(){
+  ProjectThemeData() {
     _themeData = lightTheme;
   }
 

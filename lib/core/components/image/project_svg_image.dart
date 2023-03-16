@@ -1,4 +1,4 @@
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/material.dart';
 

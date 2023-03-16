@@ -1,10 +1,10 @@
-import 'package:piton_taxi_app/core/components/image/project_image.dart';
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
-import 'package:piton_taxi_app/core/constants/app/constants.dart';
-import 'package:piton_taxi_app/core/init/navigation/navigation_service.dart';
-import 'package:piton_taxi_app/screens/menu/model/menu_model.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/sized_box_extension.dart';
+import 'package:newstreet_app/core/components/image/project_image.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/core/constants/app/constants.dart';
+import 'package:newstreet_app/core/init/navigation/navigation_service.dart';
+import 'package:newstreet_app/screens/menu/model/menu_model.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/extensions/context/sized_box_extension.dart';
 import 'package:flutter/material.dart';
 
 class MenuListItem extends StatelessWidget {

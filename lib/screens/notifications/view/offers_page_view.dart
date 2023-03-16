@@ -1,7 +1,7 @@
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/components/indicator/transition_indicator_dot.dart';
-import 'package:piton_taxi_app/core/constants/dummy_data/dummy_data.dart';
-import 'package:piton_taxi_app/core/components/image/project_image.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/components/indicator/transition_indicator_dot.dart';
+import 'package:newstreet_app/core/constants/dummy_data/dummy_data.dart';
+import 'package:newstreet_app/core/components/image/project_image.dart';
 import 'package:flutter/material.dart';
 
 class OffersPageView extends StatefulWidget {

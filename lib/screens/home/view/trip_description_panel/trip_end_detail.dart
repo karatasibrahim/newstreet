@@ -1,17 +1,17 @@
-import 'package:piton_taxi_app/core/components/container/white_container_with_shadow.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/components/button/project_circular_button.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/core/constants/images/image_constants.dart';
-import 'package:piton_taxi_app/core/extensions/context/sized_box_extension.dart';
-import 'package:piton_taxi_app/core/constants/enums/trip_status.dart';
-import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
-import 'package:piton_taxi_app/core/constants/enums/payments.dart';
-import 'package:piton_taxi_app/core/components/image/project_image.dart';
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
-import 'package:piton_taxi_app/core/extensions/maps/maps_extension.dart';
-import 'package:piton_taxi_app/core/constants/enums/routes.dart';
-import 'package:piton_taxi_app/core/init/navigation/navigation_service.dart';
+import 'package:newstreet_app/core/components/container/white_container_with_shadow.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/components/button/project_circular_button.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/constants/images/image_constants.dart';
+import 'package:newstreet_app/core/extensions/context/sized_box_extension.dart';
+import 'package:newstreet_app/core/constants/enums/trip_status.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/constants/enums/payments.dart';
+import 'package:newstreet_app/core/components/image/project_image.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/core/extensions/maps/maps_extension.dart';
+import 'package:newstreet_app/core/constants/enums/routes.dart';
+import 'package:newstreet_app/core/init/navigation/navigation_service.dart';
 import 'package:flutter/material.dart';
 import 'trip_bill.dart';
 
@@ -48,8 +48,7 @@ class _TripEndDetailState extends State<TripEndDetail> {
         WhiteContainerWithShadow(
             width: context.dynamicWidth(360),
             height: context.dynamicHeight(70),
-            child: TripBill()
-        ),
+            child: TripBill()),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -64,8 +63,7 @@ class _TripEndDetailState extends State<TripEndDetail> {
             _getPaymentButtons(() {
               context.mapProvider.changePaymentStatus(Payments.CASH);
               _navigateToComment();
-            },
-                ImageConstants.PAYMENT_CASH, LocaleKeys.payment_cash),
+            }, ImageConstants.PAYMENT_CASH, LocaleKeys.payment_cash),
           ],
         )
       ],
@@ -94,6 +92,7 @@ class _TripEndDetailState extends State<TripEndDetail> {
 
   _navigateToComment() {
     context.mapProvider.changeTripStatus(TripStatus.BEFORE_TRIP);
-    NavigationService.instance.navigatorPushSlidePage(context, Pages.PAYMENT_DONE);
+    NavigationService.instance
+        .navigatorPushSlidePage(context, Pages.PAYMENT_DONE);
   }
 }

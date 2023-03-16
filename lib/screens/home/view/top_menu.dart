@@ -1,10 +1,10 @@
-import 'package:piton_taxi_app/core/constants/enums/trip_status.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/components/button/project_circular_button.dart';
-import 'package:piton_taxi_app/core/constants/enums/routes.dart';
-import 'package:piton_taxi_app/core/init/navigation/navigation_service.dart';
+import 'package:newstreet_app/core/constants/enums/trip_status.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/components/button/project_circular_button.dart';
+import 'package:newstreet_app/core/constants/enums/routes.dart';
+import 'package:newstreet_app/core/init/navigation/navigation_service.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/screens/home/utils/google_map_provider.dart';
+import 'package:newstreet_app/screens/home/utils/google_map_provider.dart';
 import 'package:provider/provider.dart';
 
 class TopMenu extends StatelessWidget {

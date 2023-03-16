@@ -1,6 +1,6 @@
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/init/navigation/pages_import.dart';
+import 'package:newstreet_app/core/init/navigation/pages_import.dart';
 
 /*
  PageView widgetında sayfa geçişlerini göstermek için aktif olmayan indeksde genişliği fazla,

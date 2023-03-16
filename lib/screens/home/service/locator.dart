@@ -1,7 +1,7 @@
 import 'package:get_it/get_it.dart';
-import 'package:piton_taxi_app/screens/home/service/google_api_repository.dart';
-import 'package:piton_taxi_app/screens/home/service/google_api_service.dart';
-import 'package:piton_taxi_app/screens/profile/service/search_address_service.dart';
+import 'package:newstreet_app/screens/home/service/google_api_repository.dart';
+import 'package:newstreet_app/screens/home/service/google_api_service.dart';
+import 'package:newstreet_app/screens/profile/service/search_address_service.dart';
 
 GetIt locator = GetIt.instance;
 

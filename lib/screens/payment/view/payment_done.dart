@@ -1,16 +1,16 @@
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/constants/app/constants.dart';
-import 'package:piton_taxi_app/core/constants/enums/routes.dart';
-import 'package:piton_taxi_app/core/constants/images/image_constants.dart';
-import 'package:piton_taxi_app/core/extensions/context/sized_box_extension.dart';
-import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
-import 'package:piton_taxi_app/core/components/image/project_image.dart';
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/constants/app/constants.dart';
+import 'package:newstreet_app/core/constants/enums/routes.dart';
+import 'package:newstreet_app/core/constants/images/image_constants.dart';
+import 'package:newstreet_app/core/extensions/context/sized_box_extension.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/components/image/project_image.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/init/navigation/project_routes.dart';
-import 'package:piton_taxi_app/widgets/buttons/amber_button.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/init/navigation/project_routes.dart';
+import 'package:newstreet_app/widgets/buttons/amber_button.dart';
 
 class PaymentDone extends StatefulWidget {
   const PaymentDone({Key key}) : super(key: key);
@@ -19,7 +19,7 @@ class PaymentDone extends StatefulWidget {
   _PaymentDoneState createState() => _PaymentDoneState();
 }
 
-class _PaymentDoneState extends State<PaymentDone>{
+class _PaymentDoneState extends State<PaymentDone> {
   @override
   Widget build(BuildContext context) {
     final TextStyle yellowTextStyle = context.textTheme.headline2.copyWith(

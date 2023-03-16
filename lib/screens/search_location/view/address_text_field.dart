@@ -1,8 +1,8 @@
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/screens/home/utils/google_map_provider.dart';
-import 'package:piton_taxi_app/screens/search_location/view/search_location_page.dart';
-import 'package:piton_taxi_app/core/components/text_field/project_text_field.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/screens/home/utils/google_map_provider.dart';
+import 'package:newstreet_app/screens/search_location/view/search_location_page.dart';
+import 'package:newstreet_app/core/components/text_field/project_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

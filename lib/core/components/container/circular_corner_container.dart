@@ -1,15 +1,16 @@
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
 import 'package:flutter/material.dart';
 
 class CircularCornerContainer extends StatelessWidget {
-
   final Widget child;
   final double height;
   final double width;
   final double radius;
 
-  const CircularCornerContainer({Key key, @required this.child, this.height, this.width, this.radius}) : super(key: key);
+  const CircularCornerContainer(
+      {Key key, @required this.child, this.height, this.width, this.radius})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,8 @@ class CircularCornerContainer extends StatelessWidget {
       margin: context.mediumHorizontalEdgeInsets2,
       padding: context.homeContainerPadding,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(context.dynamicHeight(radius ?? 30)),
+        borderRadius:
+            BorderRadius.circular(context.dynamicHeight(radius ?? 30)),
         color: const Color(0xffffffff),
         boxShadow: [
           BoxShadow(
@@ -29,7 +31,10 @@ class CircularCornerContainer extends StatelessWidget {
           ),
         ],
       ),
-      child: child ?? Container(color: Colors.white,),
+      child: child ??
+          Container(
+            color: Colors.white,
+          ),
     );
   }
 }

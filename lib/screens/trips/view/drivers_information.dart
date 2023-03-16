@@ -1,8 +1,8 @@
-import 'package:piton_taxi_app/core/constants/images/image_constants.dart';
-import 'package:piton_taxi_app/screens/trips/model/driver_model.dart';
-import 'package:piton_taxi_app/widgets/image/circle_image.dart';
+import 'package:newstreet_app/core/constants/images/image_constants.dart';
+import 'package:newstreet_app/screens/trips/model/driver_model.dart';
+import 'package:newstreet_app/widgets/image/circle_image.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/widgets/list_tile/custom_list_tile.dart';
+import 'package:newstreet_app/widgets/list_tile/custom_list_tile.dart';
 
 class DriversInformation extends StatelessWidget {
   final Driver driver;
@@ -17,7 +17,10 @@ class DriversInformation extends StatelessWidget {
       ),
       title: driver.nameSurname,
       subtitle: driver.phoneNumber,
-      trailingIcon: Icon(Icons.arrow_forward_ios, color: Colors.transparent,),
+      trailingIcon: Icon(
+        Icons.arrow_forward_ios,
+        color: Colors.transparent,
+      ),
     );
   }
 }

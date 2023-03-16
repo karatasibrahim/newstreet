@@ -1,9 +1,9 @@
-import 'package:piton_taxi_app/core/extensions/string/string_extension.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/screens/trips/view/cancelled_page.dart';
-import 'package:piton_taxi_app/screens/trips/view/oncoming_page.dart';
-import 'package:piton_taxi_app/core/base/view/base_view.dart';
-import 'package:piton_taxi_app/core/init/navigation/pages_import.dart';
+import 'package:newstreet_app/core/extensions/string/string_extension.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/screens/trips/view/cancelled_page.dart';
+import 'package:newstreet_app/screens/trips/view/oncoming_page.dart';
+import 'package:newstreet_app/core/base/view/base_view.dart';
+import 'package:newstreet_app/core/init/navigation/pages_import.dart';
 import 'package:flutter/material.dart';
 import 'completed_page.dart';
 

@@ -1,14 +1,13 @@
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/screens/trips/model/dummy_trip_model.dart';
-import 'package:piton_taxi_app/screens/trips/view/trip_card.dart';
-import 'package:piton_taxi_app/core/base/view/base_view.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/screens/trips/model/dummy_trip_model.dart';
+import 'package:newstreet_app/screens/trips/view/trip_card.dart';
+import 'package:newstreet_app/core/base/view/base_view.dart';
 import 'package:flutter/material.dart';
 import 'trip_detail_body.dart';
 import 'driver_detail.dart';
 
-class TripDetail extends BaseView{
-
+class TripDetail extends BaseView {
   final DummyTrip trip;
 
   TripDetail({@required this.trip});
@@ -17,7 +16,7 @@ class TripDetail extends BaseView{
   _TripDetailState createState() => _TripDetailState();
 }
 
-class _TripDetailState extends BaseState<TripDetail>{
+class _TripDetailState extends BaseState<TripDetail> {
   @override
   String appBarTitle() => LocaleKeys.trips_tripDetails_title;
 
@@ -26,9 +25,15 @@ class _TripDetailState extends BaseState<TripDetail>{
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        TripCard(trip: widget.trip, margin: context.lowEdgeInsetsHorizontal, isEnabled: false),
+        TripCard(
+            trip: widget.trip,
+            margin: context.lowEdgeInsetsHorizontal,
+            isEnabled: false),
         TripDetailBody(trip: widget.trip),
-        DriverDetail(driver: widget.trip.driver, rating: widget.trip.rating,),
+        DriverDetail(
+          driver: widget.trip.driver,
+          rating: widget.trip.rating,
+        ),
       ],
     );
   }

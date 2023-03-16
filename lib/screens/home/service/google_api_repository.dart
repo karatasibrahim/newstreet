@@ -1,10 +1,10 @@
-import 'package:piton_taxi_app/screens/search_location/model/location_model.dart';
-import 'package:piton_taxi_app/screens/search_location/model/place_model.dart';
-import 'package:piton_taxi_app/screens/home/service/google_api_service.dart';
-import 'package:piton_taxi_app/screens/home/model/direction_model.dart';
-import 'package:piton_taxi_app/screens/home/service/locator.dart';
+import 'package:newstreet_app/screens/search_location/model/location_model.dart';
+import 'package:newstreet_app/screens/search_location/model/place_model.dart';
+import 'package:newstreet_app/screens/home/service/google_api_service.dart';
+import 'package:newstreet_app/screens/home/model/direction_model.dart';
+import 'package:newstreet_app/screens/home/service/locator.dart';
 
-class GoogleMapRepository{
+class GoogleMapRepository {
   GoogleApiService apiService = locator<GoogleApiService>();
 
   /// Returns a list containing data of type PlaceModel from the API Service
@@ -21,7 +21,8 @@ class GoogleMapRepository{
 
   /// Returns the DirectionModel object from API Service
   /// DirectionModel object holds values for polyline points, distance and travel time between two locations variables
-  Future<DirectionModel> getDirection(LocationModel initialLocation, LocationModel destinationLocation) async {
+  Future<DirectionModel> getDirection(
+      LocationModel initialLocation, LocationModel destinationLocation) async {
     return await apiService.getDirection(initialLocation, destinationLocation);
   }
 

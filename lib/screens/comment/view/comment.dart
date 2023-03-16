@@ -1,17 +1,17 @@
-import 'package:piton_taxi_app/core/components/rating_stars/project_rating_stars.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/screens/home/utils/google_map_provider.dart';
-import 'package:piton_taxi_app/core/constants/images/image_constants.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/constants/dummy_data/dummy_data.dart';
-import 'package:piton_taxi_app/core/components/text_field/project_text_field.dart';
-import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
-import 'package:piton_taxi_app/widgets/buttons/menu_icon_button.dart';
-import 'package:piton_taxi_app/core/extensions/maps/maps_extension.dart';
-import 'package:piton_taxi_app/core/base/view/base_view.dart';
-import 'package:piton_taxi_app/widgets/buttons/amber_button.dart';
-import 'package:piton_taxi_app/widgets/image/circle_image.dart';
+import 'package:newstreet_app/core/components/rating_stars/project_rating_stars.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/screens/home/utils/google_map_provider.dart';
+import 'package:newstreet_app/core/constants/images/image_constants.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/constants/dummy_data/dummy_data.dart';
+import 'package:newstreet_app/core/components/text_field/project_text_field.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/widgets/buttons/menu_icon_button.dart';
+import 'package:newstreet_app/core/extensions/maps/maps_extension.dart';
+import 'package:newstreet_app/core/base/view/base_view.dart';
+import 'package:newstreet_app/widgets/buttons/amber_button.dart';
+import 'package:newstreet_app/widgets/image/circle_image.dart';
 import 'package:flutter/material.dart';
 
 class Comment extends BaseView {

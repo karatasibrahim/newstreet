@@ -1,7 +1,7 @@
-import 'package:piton_taxi_app/screens/search_location/model/location_model.dart';
-import 'package:piton_taxi_app/screens/search_location/model/place_model.dart';
-import 'package:piton_taxi_app/core/constants/credentials/api_key.dart';
-import 'package:piton_taxi_app/screens/home/model/direction_model.dart';
+import 'package:newstreet_app/screens/search_location/model/location_model.dart';
+import 'package:newstreet_app/screens/search_location/model/place_model.dart';
+import 'package:newstreet_app/core/constants/credentials/api_key.dart';
+import 'package:newstreet_app/screens/home/model/direction_model.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -57,11 +57,13 @@ class GoogleApiService {
     final encodedPoints = result["routes"][0]["overview_polyline"]["points"];
     final distance = result["routes"][0]["legs"][0]["distance"]["value"];
     final duration = result["routes"][0]["legs"][0]["duration"]["value"];
-    return DirectionModel(distanceText, durationText, encodedPoints, distance, duration);
+    return DirectionModel(
+        distanceText, durationText, encodedPoints, distance, duration);
   }
 
   Future<LocationModel> getPlaceFromAddress(String address) async {
-    final String placeUrl = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=$address&key=$GOOGLE_MAPS_API_KEY&language=tr";
+    final String placeUrl =
+        "https://maps.googleapis.com/maps/api/place/textsearch/json?query=$address&key=$GOOGLE_MAPS_API_KEY&language=tr";
     final result = await _getRequest(placeUrl);
     return await getPlaceDetail(result["results"][0]["place_id"]);
   }

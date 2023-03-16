@@ -1,6 +1,6 @@
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/widgets/list_tile/custom_list_tile.dart';
-import 'package:piton_taxi_app/core/init/navigation/pages_import.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/widgets/list_tile/custom_list_tile.dart';
+import 'package:newstreet_app/core/init/navigation/pages_import.dart';
 import 'package:flutter/material.dart';
 
 class UseCurrentLocation extends StatelessWidget {

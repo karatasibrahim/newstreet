@@ -1,17 +1,17 @@
-import 'package:piton_taxi_app/core/components/button/project_text_button.dart';
-import 'package:piton_taxi_app/core/constants/methods/scroll_widget_behavior.dart';
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
-import 'package:piton_taxi_app/core/constants/app/constants.dart';
-import 'package:piton_taxi_app/core/constants/images/image_constants.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/core/init/navigation/navigation_service.dart';
-import 'package:piton_taxi_app/core/init/navigation/pages_import.dart';
+import 'package:newstreet_app/core/components/button/project_text_button.dart';
+import 'package:newstreet_app/core/constants/methods/scroll_widget_behavior.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/core/constants/app/constants.dart';
+import 'package:newstreet_app/core/constants/images/image_constants.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/init/navigation/navigation_service.dart';
+import 'package:newstreet_app/core/init/navigation/pages_import.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/screens/splash/view/page_indicator.dart';
+import 'package:newstreet_app/screens/splash/view/page_indicator.dart';
 import 'splash_body.dart';
 
 class AppInfo extends StatefulWidget {
@@ -136,8 +136,9 @@ class _AppInfoState extends State<AppInfo> {
 
   _navigateHome() {
     NavigationService.instance.navigatorPushAndRemoveUntil(
-        context,
-        Pages.LOGIN,);
+      context,
+      Pages.LOGIN,
+    );
   }
 
   void _animatePageTransition() {

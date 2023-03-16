@@ -1,4 +1,4 @@
-import 'package:piton_taxi_app/core/init/navigation/pages_import.dart';
+import 'package:newstreet_app/core/init/navigation/pages_import.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -23,6 +23,3 @@ extension DurationExtension on BuildContext {
 extension NextFocusNode on BuildContext {
   nextFocusNode(FocusNode fNode) => fNode.requestFocus();
 }
-
-
-

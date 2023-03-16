@@ -1,11 +1,11 @@
-import 'package:piton_taxi_app/core/components/container/white_container_with_shadow.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/core/init/navigation/pages_import.dart';
-import 'package:piton_taxi_app/core/base/view/base_view.dart';
+import 'package:newstreet_app/core/components/container/white_container_with_shadow.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/init/navigation/pages_import.dart';
+import 'package:newstreet_app/core/base/view/base_view.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/widgets/general/wallet_detail.dart';
+import 'package:newstreet_app/widgets/general/wallet_detail.dart';
 
 class Wallet extends BaseView {
   Wallet({Key key}) : super(key: key);

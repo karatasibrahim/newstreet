@@ -1,8 +1,8 @@
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
-import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
 
 abstract class BaseView extends StatefulWidget {
   BaseView({Key key}) : super(key: key);
@@ -18,15 +18,14 @@ abstract class BaseState<Page extends BaseView> extends State<Page> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       floatingActionButton: floatingActionButton(),
-      appBar: appBar() ?? AppBar(
-        centerTitle: true,
-        title: ProjectTextLocale(
-          text: appBarTitle() ?? "Title",
-          style: context
-              .textTheme
-              .subtitle2,
-        ),
-      ),
+      appBar: appBar() ??
+          AppBar(
+            centerTitle: true,
+            title: ProjectTextLocale(
+              text: appBarTitle() ?? "Title",
+              style: context.textTheme.subtitle2,
+            ),
+          ),
       body: Container(
         height: context.height,
         width: context.width,

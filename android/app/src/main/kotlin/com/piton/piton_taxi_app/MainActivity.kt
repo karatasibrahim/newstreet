@@ -1,4 +1,4 @@
-package com.piton.piton_taxi_app
+package com.newstreet.newstreet_app
 import io.flutter.embedding.android.FlutterActivity
 
 class MainActivity : FlutterActivity() {

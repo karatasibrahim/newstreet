@@ -1,8 +1,8 @@
 import 'driver_model.dart';
-import 'package:piton_taxi_app/screens/search_location/model/location_model.dart';
-import 'package:piton_taxi_app/core/constants/enums/payments.dart';
+import 'package:newstreet_app/screens/search_location/model/location_model.dart';
+import 'package:newstreet_app/core/constants/enums/payments.dart';
 
-class Trip{
+class Trip {
   LocationModel initialLocation;
   LocationModel destinationLocation;
   String distance;

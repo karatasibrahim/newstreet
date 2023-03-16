@@ -1,5 +1,5 @@
-import 'package:piton_taxi_app/core/components/button/project_circular_button.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/components/button/project_circular_button.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
 import 'package:flutter/material.dart';
 
 class NextPageButton extends StatelessWidget {

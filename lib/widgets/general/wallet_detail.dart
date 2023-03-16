@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/components/image/project_image.dart';
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
-import 'package:piton_taxi_app/core/constants/dummy_data/dummy_data.dart';
-import 'package:piton_taxi_app/core/constants/images/image_constants.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/sized_box_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/components/image/project_image.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/core/constants/dummy_data/dummy_data.dart';
+import 'package:newstreet_app/core/constants/images/image_constants.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/extensions/context/sized_box_extension.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
 
 class WalletDetail extends StatefulWidget {
   const WalletDetail({Key key}) : super(key: key);
@@ -23,8 +23,7 @@ class _WalletDetailState extends State<WalletDetail> {
       children: [
         ProjectTextLocale(
           text: LocaleKeys.payment_wallet_budget_label,
-          style:
-          context.textTheme.headline4.copyWith(color: Colors.black87),
+          style: context.textTheme.headline4.copyWith(color: Colors.black87),
         ),
         context.lowSizedBoxHeight,
         Row(
@@ -38,7 +37,8 @@ class _WalletDetailState extends State<WalletDetail> {
             _getEqualContainers(
                 ProjectTextLocale(
                     text: DummyData.TOTAL_POINTS,
-                    style: context.textTheme.headline1.copyWith(color: Colors.amber)),
+                    style: context.textTheme.headline1
+                        .copyWith(color: Colors.amber)),
                 Alignment.center),
             _getEqualContainers(
                 ProjectTextLocale(

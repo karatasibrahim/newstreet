@@ -1,13 +1,13 @@
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/core/init/theme/project_theme.dart';
-import 'package:piton_taxi_app/screens/login/view/otp_dialog_content.dart';
-import 'package:piton_taxi_app/core/extensions/string/string_extension.dart';
-import 'package:piton_taxi_app/core/constants/enums/routes.dart';
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
-import 'package:piton_taxi_app/core/constants/app/constants.dart';
-import 'package:piton_taxi_app/core/init/navigation/project_routes.dart';
-import 'package:piton_taxi_app/widgets/buttons/next_page.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/init/theme/project_theme.dart';
+import 'package:newstreet_app/screens/login/view/otp_dialog_content.dart';
+import 'package:newstreet_app/core/extensions/string/string_extension.dart';
+import 'package:newstreet_app/core/constants/enums/routes.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/core/constants/app/constants.dart';
+import 'package:newstreet_app/core/init/navigation/project_routes.dart';
+import 'package:newstreet_app/widgets/buttons/next_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
@@ -22,7 +22,8 @@ class OtpCodeDialog extends StatelessWidget {
         Provider.of<ProjectThemeData>(context).themeData.textTheme;
     return AlertDialog(
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(ProjectConstants.ALERT_DIALOG_RADIUS),
+        borderRadius:
+            BorderRadius.circular(ProjectConstants.ALERT_DIALOG_RADIUS),
       ),
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -63,8 +64,10 @@ class OtpCodeDialog extends StatelessWidget {
           onTap: () {
             // otp kod doğruluğunu test et
             Navigator.of(context).pushAndRemoveUntil(
-                ProjectRoute.generateSlidePageRouteBuilder(Pages.PERSONAL_INFORMATION,
-                    ProjectConstants.FAST_PAGE_TRANSITION_DURATION),(Route<dynamic> route) => false);
+                ProjectRoute.generateSlidePageRouteBuilder(
+                    Pages.PERSONAL_INFORMATION,
+                    ProjectConstants.FAST_PAGE_TRANSITION_DURATION),
+                (Route<dynamic> route) => false);
           },
         )
       ],

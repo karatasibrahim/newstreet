@@ -1,9 +1,10 @@
-import 'package:piton_taxi_app/core/components/button_bar/project_button_bar.dart';
-import 'package:piton_taxi_app/core/extensions/string/string_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/components/button_bar/project_button_bar.dart';
+import 'package:newstreet_app/core/extensions/string/string_extension.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
 
 class BookLaterDialog extends StatelessWidget {
   const BookLaterDialog({Key key}) : super(key: key);
@@ -34,9 +35,7 @@ class BookLaterDialog extends StatelessWidget {
           mode: CupertinoDatePickerMode.dateAndTime,
         ),
       ),
-      actions: [
-        ProjectButtonBar(onPressed: (){})
-      ],
+      actions: [ProjectButtonBar(onPressed: () {})],
     );
   }
 }

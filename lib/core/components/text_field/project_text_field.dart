@@ -1,8 +1,8 @@
-import 'package:piton_taxi_app/core/extensions/string/string_extension.dart';
+import 'package:newstreet_app/core/extensions/string/string_extension.dart';
 import 'package:flutter/services.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
 import 'package:flutter/material.dart';
 
 class ProjectTextField extends StatefulWidget {
@@ -56,7 +56,9 @@ class ProjectTextField extends StatefulWidget {
       this.fNode,
       this.completed,
       this.maxLength,
-      this.controller, this.onTap, this.keyboardAction})
+      this.controller,
+      this.onTap,
+      this.keyboardAction})
       : super(key: key);
 
   @override
@@ -88,8 +90,10 @@ class _ProjectTextFieldState extends State<ProjectTextField> {
       style: Theme.of(context).textTheme.bodyText2,
       decoration: InputDecoration(
         border: widget.border,
-        focusedBorder: widget.focusedBorder ?? context.inputDecorationTheme.focusedBorder,
-        enabledBorder: widget.enabledBorder ?? context.inputDecorationTheme.enabledBorder,
+        focusedBorder:
+            widget.focusedBorder ?? context.inputDecorationTheme.focusedBorder,
+        enabledBorder:
+            widget.enabledBorder ?? context.inputDecorationTheme.enabledBorder,
         errorBorder: widget.errorBorder ?? InputBorder.none,
         disabledBorder: widget.disabledBorder ?? InputBorder.none,
         contentPadding: widget.contentPadding ?? context.textInputPadding,
@@ -98,9 +102,9 @@ class _ProjectTextFieldState extends State<ProjectTextField> {
         suffixIcon: widget.suffixIcon ?? null,
         prefixIcon: widget.prefixIcon ?? null,
       ),
-      onChanged: widget.onChanged ?? (text){},
+      onChanged: widget.onChanged ?? (text) {},
       cursorColor: widget.cursorColor,
-      onSubmitted: widget.onSubmitted ?? (text){},
+      onSubmitted: widget.onSubmitted ?? (text) {},
       onEditingComplete: () => widget.completed ?? {},
       minLines: widget.minLines ?? 1,
       maxLines: widget.maxLines ?? 1,

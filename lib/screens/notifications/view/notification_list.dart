@@ -1,12 +1,12 @@
-import 'package:piton_taxi_app/core/components/container/white_container_with_shadow.dart';
-import 'package:piton_taxi_app/screens/notifications/model/notification_model.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/constants/dummy_data/dummy_data.dart';
-import 'package:piton_taxi_app/core/constants/app/constants.dart';
-import 'package:piton_taxi_app/core/constants/enums/routes.dart';
-import 'package:piton_taxi_app/core/init/navigation/project_routes.dart';
-import 'package:piton_taxi_app/widgets/list_tile/custom_list_tile.dart';
+import 'package:newstreet_app/core/components/container/white_container_with_shadow.dart';
+import 'package:newstreet_app/screens/notifications/model/notification_model.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/constants/dummy_data/dummy_data.dart';
+import 'package:newstreet_app/core/constants/app/constants.dart';
+import 'package:newstreet_app/core/constants/enums/routes.dart';
+import 'package:newstreet_app/core/init/navigation/project_routes.dart';
+import 'package:newstreet_app/widgets/list_tile/custom_list_tile.dart';
 import 'package:flutter/material.dart';
 
 class NotificationList extends StatefulWidget {

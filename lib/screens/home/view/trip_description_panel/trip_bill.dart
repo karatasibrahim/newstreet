@@ -1,10 +1,10 @@
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/screens/home/utils/google_map_provider.dart';
-import 'package:piton_taxi_app/core/constants/images/image_constants.dart';
-import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
-import 'package:piton_taxi_app/core/components/image/project_image.dart';
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/screens/home/utils/google_map_provider.dart';
+import 'package:newstreet_app/core/constants/images/image_constants.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/components/image/project_image.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 
@@ -25,7 +25,7 @@ class _TripBillState extends State<TripBill> {
     return Consumer<GoogleMapProvider>(
       builder: (context, mapModel, child) {
         List<String> distance =
-        mapModel.tripDirectionModel.distanceText.split(" ");
+            mapModel.tripDirectionModel.distanceText.split(" ");
         List<String> value = distance[0].split(",");
         double price = 4 + 4.5 * double.parse(value[0] + "." + value[1]);
         return Row(
@@ -50,28 +50,32 @@ class _TripBillState extends State<TripBill> {
       width: context.dynamicWidth(120),
       child: image != null
           ? ProjectImage(
-        imagePath: image,
-        width: 50,
-      )
+              imagePath: image,
+              width: 50,
+            )
           : ProjectTextLocale(
-        text: text,
-        style: style,
-      ),
+              text: text,
+              style: style,
+            ),
     );
   }
 }
 
 class ShowBottomSheet {
   static ShowBottomSheet _instance;
-  static ShowBottomSheet get instance => _instance ??= ShowBottomSheet._initialize();
+  static ShowBottomSheet get instance =>
+      _instance ??= ShowBottomSheet._initialize();
 
-  showBottomSheet({BuildContext context, Widget widget,bool isScrollControlled, Color backgroundColor}) {
+  showBottomSheet(
+      {BuildContext context,
+      Widget widget,
+      bool isScrollControlled,
+      Color backgroundColor}) {
     showModalBottomSheet(
         backgroundColor: backgroundColor ?? Colors.white,
         isScrollControlled: isScrollControlled ?? false,
         context: context,
-        builder: (BuildContext context) => widget
-    );
+        builder: (BuildContext context) => widget);
   }
 
   ShowBottomSheet._initialize();

@@ -1,7 +1,7 @@
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
-import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
 
 class ProjectTextButton extends StatelessWidget {
   final String text;

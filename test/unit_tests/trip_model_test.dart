@@ -1,9 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:piton_taxi_app/core/constants/images/image_constants.dart';
-import 'package:piton_taxi_app/screens/trips/model/dummy_trip_model.dart';
-import 'package:piton_taxi_app/core/constants/enums/trips.dart';
-import 'package:piton_taxi_app/screens/trips/model/driver_model.dart';
-
+import 'package:newstreet_app/core/constants/images/image_constants.dart';
+import 'package:newstreet_app/screens/trips/model/dummy_trip_model.dart';
+import 'package:newstreet_app/core/constants/enums/trips.dart';
+import 'package:newstreet_app/screens/trips/model/driver_model.dart';
 
 void main() {
   test('Is trip empty or not', () {
@@ -17,7 +16,8 @@ void main() {
         distance: 7.2,
         time: 17,
         price: 34,
-        driver: Driver("Jack Doe", "+90 545 545 54 54", "26 XX 545", ImageConstants.DRIVER_IMAGE, "3.5"),
+        driver: Driver("Jack Doe", "+90 545 545 54 54", "26 XX 545",
+            ImageConstants.DRIVER_IMAGE, "3.5"),
         rating: 5);
 
     expect(trip.startLocation, "Piton Ar-Ge and Software House");

@@ -1,6 +1,6 @@
-import 'package:piton_taxi_app/core/constants/app/constants.dart';
-import 'package:piton_taxi_app/core/init/navigation/pages_import.dart';
-import 'package:piton_taxi_app/core/init/navigation/project_routes.dart';
+import 'package:newstreet_app/core/constants/app/constants.dart';
+import 'package:newstreet_app/core/init/navigation/pages_import.dart';
+import 'package:newstreet_app/core/init/navigation/project_routes.dart';
 
 class NavigationService {
   static NavigationService _instance;

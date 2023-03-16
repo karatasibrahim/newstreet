@@ -1,10 +1,10 @@
-import 'package:piton_taxi_app/core/constants/app/constants.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/constants/app/constants.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/screens/login/view/country_code_widget.dart';
-import 'package:piton_taxi_app/core/extensions/context/divider_extension.dart';
-import 'package:piton_taxi_app/widgets/general/phone_number_widget.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/screens/login/view/country_code_widget.dart';
+import 'package:newstreet_app/core/extensions/context/divider_extension.dart';
+import 'package:newstreet_app/widgets/general/phone_number_widget.dart';
 
 class GetPhoneNumber extends StatefulWidget {
   final Function(String) onChanged;

@@ -1,8 +1,8 @@
-import 'package:piton_taxi_app/core/constants/dummy_data/dummy_data.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/base/view/base_view.dart';
+import 'package:newstreet_app/core/constants/dummy_data/dummy_data.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/base/view/base_view.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
 import 'change_body.dart';
 
 class ChangePhone extends BaseView {
@@ -19,13 +19,12 @@ class _ChangePhoneState extends BaseState<ChangePhone> {
   @override
   Widget body() {
     return ChangeBody(
-      keyboardType: TextInputType.phone,
+        keyboardType: TextInputType.phone,
         label: LocaleKeys.profile_contactInformation_phoneLabel,
         hint: LocaleKeys.profile_update_hintPhone,
         onChanged: (phoneText) {
           DummyData.user_1.phoneNumber = phoneText;
-        }
-    );
+        });
   }
 
   @override

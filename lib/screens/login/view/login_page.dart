@@ -1,11 +1,11 @@
-import 'package:piton_taxi_app/core/constants/enums/routes.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/core/init/navigation/navigation_service.dart';
-import 'package:piton_taxi_app/widgets/general/get_phone_number.dart';
-import 'package:piton_taxi_app/core/extensions/context/sized_box_extension.dart';
+import 'package:newstreet_app/core/constants/enums/routes.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/init/navigation/navigation_service.dart';
+import 'package:newstreet_app/widgets/general/get_phone_number.dart';
+import 'package:newstreet_app/core/extensions/context/sized_box_extension.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/widgets/buttons/amber_button.dart';
+import 'package:newstreet_app/widgets/buttons/amber_button.dart';
 import 'login_base.dart';
 import 'facebook_login.dart';
 import 'gmail_login.dart';
@@ -28,10 +28,10 @@ class Login extends StatelessWidget {
             AmberButton(
               width: context.dynamicWidth(200),
               onPressed: () =>
-                  NavigationService.instance
-                      .navigatorPushAndRemoveUntil(
-                      context,
-                      Pages.PERSONAL_INFORMATION,),
+                  NavigationService.instance.navigatorPushAndRemoveUntil(
+                context,
+                Pages.PERSONAL_INFORMATION,
+              ),
               //_showOTPDialog(context),
               text: LocaleKeys.button_labels_save,
             ),

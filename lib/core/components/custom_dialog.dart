@@ -1,15 +1,15 @@
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/components/button/project_text_button.dart';
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
-import 'package:piton_taxi_app/core/constants/app/constants.dart';
-import 'package:piton_taxi_app/core/constants/images/image_constants.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/sized_box_extension.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/core/init/navigation/navigation_service.dart';
+import 'package:newstreet_app/core/components/button/project_text_button.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/core/constants/app/constants.dart';
+import 'package:newstreet_app/core/constants/images/image_constants.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/extensions/context/sized_box_extension.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/init/navigation/navigation_service.dart';
 
 class CustomDialog extends StatefulWidget {
   final String title, content, action;
@@ -23,7 +23,8 @@ class CustomDialog extends StatefulWidget {
       this.content,
       this.action,
       this.img,
-      this.contentChild, this.actions})
+      this.contentChild,
+      this.actions})
       : super(key: key);
 
   @override
@@ -64,35 +65,38 @@ class _CustomDialogState extends State<CustomDialog> {
               ),
             ],
           ),
-          child: widget.contentChild ?? Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              ProjectTextLocale(
-                text: widget.title ?? LocaleKeys.errors_errorLabel,
-                style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+          child: widget.contentChild ??
+              Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  ProjectTextLocale(
+                    text: widget.title ?? LocaleKeys.errors_errorLabel,
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+                  ),
+                  context.lowSizedBoxHeight,
+                  ProjectTextLocale(
+                    text: widget.content ?? "",
+                    maxLines: 5,
+                    style: Theme.of(context)
+                        .textTheme
+                        .subtitle2
+                        .copyWith(color: Colors.black87),
+                    align: TextAlign.center,
+                  ),
+                  context.lowestSizedBoxHeight,
+                  Align(
+                    alignment: Alignment.bottomRight,
+                    child: widget.actions ??
+                        ProjectTextButton(
+                            onPressed: () => NavigationService.instance
+                                .navigatorPop(context),
+                            child: ProjectTextLocale(
+                              text: LocaleKeys.button_labels_ok,
+                              style: TextStyle(fontSize: 18),
+                            )),
+                  ),
+                ],
               ),
-              context.lowSizedBoxHeight,
-              ProjectTextLocale(
-                text: widget.content ?? "",
-                maxLines: 5,
-                style: Theme.of(context)
-                    .textTheme
-                    .subtitle2
-                    .copyWith(color: Colors.black87),
-                align: TextAlign.center,
-              ),
-              context.lowestSizedBoxHeight,
-              Align(
-                alignment: Alignment.bottomRight,
-                child: widget.actions ?? ProjectTextButton(
-                    onPressed: () => NavigationService.instance.navigatorPop(context),
-                    child: ProjectTextLocale(
-                      text: LocaleKeys.button_labels_ok,
-                      style: TextStyle(fontSize: 18),
-                    )),
-              ),
-            ],
-          ),
         ),
         Positioned(
           left: ProjectConstants.ALERT_DIALOG_RADIUS,

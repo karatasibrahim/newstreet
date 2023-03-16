@@ -1,17 +1,17 @@
-import 'package:piton_taxi_app/core/components/dropdown_menu/dropdown_menu_with_border.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/screens/payment/model/credit_card_model.dart';
-import 'package:piton_taxi_app/core/constants/dummy_data/dummy_data.dart';
-import 'package:piton_taxi_app/core/extensions/context/sized_box_extension.dart';
-import 'package:piton_taxi_app/core/components/text_field/project_text_field.dart';
-import 'package:piton_taxi_app/core/components/button_bar/project_button_bar.dart';
-import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
-import 'package:piton_taxi_app/widgets/alert_dialogs/error_alert_dialog.dart';
-import 'package:piton_taxi_app/core/base/view/base_view.dart';
-import 'package:piton_taxi_app/core/init/navigation/pages_import.dart';
+import 'package:newstreet_app/core/components/dropdown_menu/dropdown_menu_with_border.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/screens/payment/model/credit_card_model.dart';
+import 'package:newstreet_app/core/constants/dummy_data/dummy_data.dart';
+import 'package:newstreet_app/core/extensions/context/sized_box_extension.dart';
+import 'package:newstreet_app/core/components/text_field/project_text_field.dart';
+import 'package:newstreet_app/core/components/button_bar/project_button_bar.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/widgets/alert_dialogs/error_alert_dialog.dart';
+import 'package:newstreet_app/core/base/view/base_view.dart';
+import 'package:newstreet_app/core/init/navigation/pages_import.dart';
 
 class AddCreditCard extends BaseView {
   @override
@@ -46,9 +46,17 @@ class _AddCreditCardState extends BaseState<AddCreditCard> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _getText(context, focusNode0, LocaleKeys.addCreditCard_body_cardHolder_hint, LocaleKeys.addCreditCard_body_cardHolder_label),
+        _getText(
+            context,
+            focusNode0,
+            LocaleKeys.addCreditCard_body_cardHolder_hint,
+            LocaleKeys.addCreditCard_body_cardHolder_label),
         context.lowSizedBoxHeight,
-        _getText(context, focusNode1, LocaleKeys.addCreditCard_body_CardNumber_hint, LocaleKeys.addCreditCard_body_CardNumber_label),
+        _getText(
+            context,
+            focusNode1,
+            LocaleKeys.addCreditCard_body_CardNumber_hint,
+            LocaleKeys.addCreditCard_body_CardNumber_label),
         context.lowSizedBoxHeight,
         ProjectTextLocale(
             text: LocaleKeys.addCreditCard_body_expirationDate,
@@ -77,8 +85,10 @@ class _AddCreditCardState extends BaseState<AddCreditCard> {
                 barrierDismissible: false,
                 context: context,
                 builder: (context) => ErrorAlertDialog(
-                      contentText: LocaleKeys.payment_registeredCards_addCard_error_body,
-                      title: LocaleKeys.payment_registeredCards_addCard_error_title,
+                      contentText:
+                          LocaleKeys.payment_registeredCards_addCard_error_body,
+                      title: LocaleKeys
+                          .payment_registeredCards_addCard_error_title,
                     ));
           }
         })

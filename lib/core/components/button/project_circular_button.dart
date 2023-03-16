@@ -1,7 +1,7 @@
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
 
 class ProjectCircularButton extends StatelessWidget {
   final VoidCallback onPressed;
@@ -10,7 +10,11 @@ class ProjectCircularButton extends StatelessWidget {
   final Color color;
 
   const ProjectCircularButton(
-      {Key key, @required this.onPressed, @required this.child, this.color, this.padding})
+      {Key key,
+      @required this.onPressed,
+      @required this.child,
+      this.color,
+      this.padding})
       : super(key: key);
 
   @override
@@ -22,8 +26,7 @@ class ProjectCircularButton extends StatelessWidget {
         child: child ?? ProjectTextLocale(text: LocaleKeys.button_labels_ok),
       ),
       style: ElevatedButton.styleFrom(
-          shape: CircleBorder(),
-          primary: color ?? Colors.amber),
+          shape: CircleBorder(), primary: color ?? Colors.amber),
     );
   }
 }

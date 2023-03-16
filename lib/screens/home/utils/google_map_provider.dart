@@ -4,16 +4,16 @@ import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:piton_taxi_app/core/constants/enums/payments.dart';
-import 'package:piton_taxi_app/core/constants/images/image_constants.dart';
+import 'package:newstreet_app/core/constants/enums/payments.dart';
+import 'package:newstreet_app/core/constants/images/image_constants.dart';
 import 'dart:async';
-import 'package:piton_taxi_app/core/init/navigation/pages_import.dart';
-import 'package:piton_taxi_app/screens/search_location/model/place_model.dart';
-import 'package:piton_taxi_app/screens/home/service/google_api_repository.dart';
-import 'package:piton_taxi_app/screens/home/service/locator.dart';
-import 'package:piton_taxi_app/screens/search_location/model/location_model.dart';
-import 'package:piton_taxi_app/screens/home/model/direction_model.dart';
-import 'package:piton_taxi_app/core/constants/enums/trip_status.dart';
+import 'package:newstreet_app/core/init/navigation/pages_import.dart';
+import 'package:newstreet_app/screens/search_location/model/place_model.dart';
+import 'package:newstreet_app/screens/home/service/google_api_repository.dart';
+import 'package:newstreet_app/screens/home/service/locator.dart';
+import 'package:newstreet_app/screens/search_location/model/location_model.dart';
+import 'package:newstreet_app/screens/home/model/direction_model.dart';
+import 'package:newstreet_app/core/constants/enums/trip_status.dart';
 
 class GoogleMapProvider extends ChangeNotifier {
   GoogleMapRepository _repository = locator<GoogleMapRepository>();
@@ -33,8 +33,7 @@ class GoogleMapProvider extends ChangeNotifier {
   DirectionModel driverDirectionModel;
 
   TextEditingController initialLocationController = TextEditingController();
-  TextEditingController destinationLocationController =
-      TextEditingController();
+  TextEditingController destinationLocationController = TextEditingController();
 
   Map<MarkerId, Marker> markerMap =
       Map<MarkerId, Marker>(); // Keeps markers and marker ids
@@ -359,7 +358,8 @@ class GoogleMapProvider extends ChangeNotifier {
     dummyDuration = (driverDirectionModel.duration % 3600) / 60;
     var factor = dummyDuration / driverLatLng.length;
     Timer.periodic(Duration(seconds: 1), (timer) {
-      if (tripStatus == TripStatus.TAXI_COMING || tripStatus == TripStatus.TRIP_STARTED) {
+      if (tripStatus == TripStatus.TAXI_COMING ||
+          tripStatus == TripStatus.TRIP_STARTED) {
         if (index1 < driverLatLng.length) {
           addMarker(
               Marker(

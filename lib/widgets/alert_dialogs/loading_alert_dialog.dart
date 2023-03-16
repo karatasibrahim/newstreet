@@ -1,11 +1,11 @@
-import 'package:piton_taxi_app/core/constants/app/constants.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/extensions/maps/maps_extension.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/widgets/progress_indicator/custom_progress_indicator.dart';
-import 'package:piton_taxi_app/core/constants/enums/trip_status.dart';
+import 'package:newstreet_app/core/constants/app/constants.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/extensions/maps/maps_extension.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/widgets/progress_indicator/custom_progress_indicator.dart';
+import 'package:newstreet_app/core/constants/enums/trip_status.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/extensions/string/string_extension.dart';
+import 'package:newstreet_app/core/extensions/string/string_extension.dart';
 
 class LoadingAlertDialog extends StatefulWidget {
   @override
@@ -26,7 +26,8 @@ class _LoadingAlertDialogState extends State<LoadingAlertDialog> {
   Widget build(BuildContext context) {
     return AlertDialog(
       shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(context.dynamicWidth(ProjectConstants.ALERT_DIALOG_RADIUS))),
+          borderRadius: BorderRadius.circular(
+              context.dynamicWidth(ProjectConstants.ALERT_DIALOG_RADIUS))),
       content: Container(
         height: context.dynamicHeight(150),
         child: Column(

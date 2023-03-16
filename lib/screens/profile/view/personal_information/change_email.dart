@@ -1,8 +1,8 @@
-import 'package:piton_taxi_app/core/constants/dummy_data/dummy_data.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/base/view/base_view.dart';
+import 'package:newstreet_app/core/constants/dummy_data/dummy_data.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/base/view/base_view.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
 import 'change_body.dart';
 
 class ChangeEmail extends BaseView {
@@ -24,8 +24,7 @@ class _ChangeEmailState extends BaseState<ChangeEmail> {
         hint: LocaleKeys.profile_update_hintEmail,
         onChanged: (emailText) {
           DummyData.user_1.email = emailText;
-        }
-    );
+        });
   }
 
   @override

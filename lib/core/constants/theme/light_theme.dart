@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/core/constants/app/constants.dart';
+import 'package:newstreet_app/core/constants/app/constants.dart';
 
 final ThemeData lightTheme = ThemeData(
-  appBarTheme: AppBarTheme(
-      color: Colors.white,
-      elevation: 1
-  ),
+  appBarTheme: AppBarTheme(color: Colors.white, elevation: 1),
   primarySwatch: Colors.amber,
   brightness: Brightness.light,
   primaryColor: Color(0xffffc107),
@@ -260,7 +257,7 @@ final ThemeData lightTheme = ThemeData(
     floatingLabelBehavior: FloatingLabelBehavior.auto,
     isDense: false,
     contentPadding:
-    EdgeInsets.only(top: 12.0, bottom: 12.0, left: 10, right: 10),
+        EdgeInsets.only(top: 12.0, bottom: 12.0, left: 10, right: 10),
     isCollapsed: false,
     prefixStyle: TextStyle(
       color: Color(0xffffbf00),
@@ -296,7 +293,8 @@ final ThemeData lightTheme = ThemeData(
         width: 2.0,
         style: BorderStyle.solid,
       ),
-      borderRadius: BorderRadius.circular(ProjectConstants.TEXT_FIELD_BORDER_RADIUS),
+      borderRadius:
+          BorderRadius.circular(ProjectConstants.TEXT_FIELD_BORDER_RADIUS),
     ),
     focusedErrorBorder: OutlineInputBorder(
       borderSide: BorderSide(
@@ -304,7 +302,8 @@ final ThemeData lightTheme = ThemeData(
         width: 2.0,
         style: BorderStyle.solid,
       ),
-      borderRadius: BorderRadius.circular(ProjectConstants.TEXT_FIELD_BORDER_RADIUS),
+      borderRadius:
+          BorderRadius.circular(ProjectConstants.TEXT_FIELD_BORDER_RADIUS),
     ),
     disabledBorder: UnderlineInputBorder(
       borderSide: BorderSide(
@@ -312,7 +311,8 @@ final ThemeData lightTheme = ThemeData(
         width: 1.0,
         style: BorderStyle.solid,
       ),
-      borderRadius: BorderRadius.all(Radius.circular(ProjectConstants.TEXT_FIELD_BORDER_RADIUS)),
+      borderRadius: BorderRadius.all(
+          Radius.circular(ProjectConstants.TEXT_FIELD_BORDER_RADIUS)),
     ),
     enabledBorder: OutlineInputBorder(
       borderSide: BorderSide(
@@ -379,8 +379,7 @@ final ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
     deleteIconColor: Color(0xde000000),
     disabledColor: Color(0x0c000000),
-    labelPadding:
-    EdgeInsets.only(top: 0.0, bottom: 0.0, left: 8.0, right: 8.0),
+    labelPadding: EdgeInsets.only(top: 0.0, bottom: 0.0, left: 8.0, right: 8.0),
     labelStyle: TextStyle(
       color: Color(0xde000000),
       fontSize: 14.0,
@@ -398,18 +397,18 @@ final ThemeData lightTheme = ThemeData(
     selectedColor: Color(0x3d000000),
     shape: StadiumBorder(
         side: BorderSide(
-          color: Color(0xff000000),
-          width: 0.0,
-          style: BorderStyle.none,
-        )),
+      color: Color(0xff000000),
+      width: 0.0,
+      style: BorderStyle.none,
+    )),
   ),
   dialogTheme: DialogTheme(
       shape: RoundedRectangleBorder(
-        side: BorderSide(
-          color: Color(0xff000000),
-          width: 0.0,
-          style: BorderStyle.none,
-        ),
-        borderRadius: BorderRadius.all(Radius.circular(0.0)),
-      )),
+    side: BorderSide(
+      color: Color(0xff000000),
+      width: 0.0,
+      style: BorderStyle.none,
+    ),
+    borderRadius: BorderRadius.all(Radius.circular(0.0)),
+  )),
 );

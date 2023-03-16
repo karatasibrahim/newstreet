@@ -1,5 +1,5 @@
-import 'package:piton_taxi_app/core/constants/dummy_data/dummy_data.dart';
-import 'package:piton_taxi_app/screens/trips/view/trip_card.dart';
+import 'package:newstreet_app/core/constants/dummy_data/dummy_data.dart';
+import 'package:newstreet_app/screens/trips/view/trip_card.dart';
 import 'package:flutter/material.dart';
 
 class CancelledPage extends StatefulWidget {

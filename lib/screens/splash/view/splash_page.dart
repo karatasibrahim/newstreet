@@ -1,22 +1,22 @@
 import 'package:package_info/package_info.dart';
-import 'package:piton_taxi_app/core/components/image/project_image.dart';
-import 'package:piton_taxi_app/core/extensions/context/project_context_extension.dart';
-import 'package:piton_taxi_app/core/components/text/project_text_locale.dart';
-import 'package:piton_taxi_app/core/constants/enums/routes.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/core/init/navigation/navigation_service.dart';
-import 'package:piton_taxi_app/core/extensions/string/string_extension.dart';
-import 'package:piton_taxi_app/screens/home/utils/google_map_provider.dart';
+import 'package:newstreet_app/core/components/image/project_image.dart';
+import 'package:newstreet_app/core/extensions/context/project_context_extension.dart';
+import 'package:newstreet_app/core/components/text/project_text_locale.dart';
+import 'package:newstreet_app/core/constants/enums/routes.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/init/navigation/navigation_service.dart';
+import 'package:newstreet_app/core/extensions/string/string_extension.dart';
+import 'package:newstreet_app/screens/home/utils/google_map_provider.dart';
 import '../../../core/constants/images/image_constants.dart';
-import 'package:piton_taxi_app/core/extensions/context/sized_box_extension.dart';
-import 'package:piton_taxi_app/core/extensions/theme/theme_extension.dart';
+import 'package:newstreet_app/core/extensions/context/sized_box_extension.dart';
+import 'package:newstreet_app/core/extensions/theme/theme_extension.dart';
 import '../../../core/constants/app/project_animation.dart';
 import '../../../core/constants/app/constants.dart';
 import 'package:provider/provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:piton_taxi_app/core/components/custom_dialog.dart';
+import 'package:newstreet_app/core/components/custom_dialog.dart';
 
 class Splash extends StatefulWidget {
   @override
@@ -43,7 +43,8 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    if (context.watch<GoogleMapProvider>().permissionStatus.isGranted) splashMove();
+    if (context.watch<GoogleMapProvider>().permissionStatus.isGranted)
+      splashMove();
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(

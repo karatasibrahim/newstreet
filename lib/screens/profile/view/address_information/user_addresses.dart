@@ -1,16 +1,16 @@
-import 'package:piton_taxi_app/core/components/text_field/project_text_field.dart';
-import 'package:piton_taxi_app/core/extensions/context/edge_insets_extension.dart';
-import 'package:piton_taxi_app/core/constants/dummy_data/dummy_data.dart';
-import 'package:piton_taxi_app/core/extensions/string/string_extension.dart';
-import 'package:piton_taxi_app/core/constants/app/constants.dart';
-import 'package:piton_taxi_app/core/constants/enums/routes.dart';
-import 'package:piton_taxi_app/core/init/languages/locale_keys.g.dart';
-import 'package:piton_taxi_app/core/init/navigation/navigation_service.dart';
-import 'package:piton_taxi_app/core/init/navigation/project_routes.dart';
-import 'package:piton_taxi_app/widgets/list_tile/custom_list_tile.dart';
-import 'package:piton_taxi_app/core/base/view/base_view.dart';
+import 'package:newstreet_app/core/components/text_field/project_text_field.dart';
+import 'package:newstreet_app/core/extensions/context/edge_insets_extension.dart';
+import 'package:newstreet_app/core/constants/dummy_data/dummy_data.dart';
+import 'package:newstreet_app/core/extensions/string/string_extension.dart';
+import 'package:newstreet_app/core/constants/app/constants.dart';
+import 'package:newstreet_app/core/constants/enums/routes.dart';
+import 'package:newstreet_app/core/init/languages/locale_keys.g.dart';
+import 'package:newstreet_app/core/init/navigation/navigation_service.dart';
+import 'package:newstreet_app/core/init/navigation/project_routes.dart';
+import 'package:newstreet_app/widgets/list_tile/custom_list_tile.dart';
+import 'package:newstreet_app/core/base/view/base_view.dart';
 import 'package:flutter/material.dart';
-import 'package:piton_taxi_app/widgets/buttons/next_page.dart';
+import 'package:newstreet_app/widgets/buttons/next_page.dart';
 
 class UserAddress extends BaseView {
   @override
@@ -79,8 +79,8 @@ class _UserAddressState extends BaseState<UserAddress> {
                 context: context,
                 builder: (context) => AlertDialog(
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.all(
-                              Radius.circular(ProjectConstants.ALERT_DIALOG_RADIUS))),
+                          borderRadius: BorderRadius.all(Radius.circular(
+                              ProjectConstants.ALERT_DIALOG_RADIUS))),
                       title: Text(
                         LocaleKeys.addresses_addAnotherLabel_title.locale,
                       ),

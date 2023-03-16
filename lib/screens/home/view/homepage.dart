@@ -1,11 +1,11 @@
-import 'package:piton_taxi_app/screens/home/view/trip_description_panel/trip_description.dart';
-import 'package:piton_taxi_app/screens/home/view/trip_description_panel/trip_payment.dart';
-import 'package:piton_taxi_app/screens/home/view/google_map_background.dart';
-import 'package:piton_taxi_app/screens/home/utils/google_map_provider.dart';
-import 'package:piton_taxi_app/core/constants/enums/trip_status.dart';
-import 'package:piton_taxi_app/screens/home/view/where_from_to.dart';
-import 'package:piton_taxi_app/core/constants/enums/payments.dart';
-import 'package:piton_taxi_app/screens/home/view/top_menu.dart';
+import 'package:newstreet_app/screens/home/view/trip_description_panel/trip_description.dart';
+import 'package:newstreet_app/screens/home/view/trip_description_panel/trip_payment.dart';
+import 'package:newstreet_app/screens/home/view/google_map_background.dart';
+import 'package:newstreet_app/screens/home/utils/google_map_provider.dart';
+import 'package:newstreet_app/core/constants/enums/trip_status.dart';
+import 'package:newstreet_app/screens/home/view/where_from_to.dart';
+import 'package:newstreet_app/core/constants/enums/payments.dart';
+import 'package:newstreet_app/screens/home/view/top_menu.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 
@@ -24,9 +24,8 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       resizeToAvoidBottomInset: false,
-      body: Consumer<GoogleMapProvider>(
-        builder: (context, mapModel, child) {
-          return Stack(
+      body: Consumer<GoogleMapProvider>(builder: (context, mapModel, child) {
+        return Stack(
           children: [
             GoogleMapBackground(),
             TopMenu(menuButton: widget.menuButton),
@@ -45,8 +44,8 @@ class _HomePageState extends State<HomePage> {
                   mapModel.paymentStatus != Payments.DONE,
             ),
           ],
-        );}
-      ),
+        );
+      }),
     );
   }
 }
