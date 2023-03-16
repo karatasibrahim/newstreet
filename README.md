@@ -1,4 +1,4 @@
-# taxi_app
+# newstreet_app
 
 Taxi App with Flutter
 
