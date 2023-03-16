@@ -470,13 +470,13 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "piton_taxi_app",
+      "name": "newstreet_app",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2023-03-16T18:52:53.792530Z",
+  "generated": "2023-03-16T19:13:57.234955Z",
   "generator": "pub",
   "generatorVersion": "2.19.2"
 }
