@@ -38,9 +38,9 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.piton.piton_taxi_app"
+        applicationId "com.newstreet.newstreet_app"
         minSdkVersion 16
-        targetSdkVersion 30
+        targetSdkVersion 33
         multiDexEnabled true
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -54,7 +54,7 @@ android {
             signingConfig signingConfigs.debug
             applicationVariants.all { variant ->
                 variant.outputs.all { output ->
-                    def projectName = "bi_taksi"
+                    def projectName = "news_street"
                     outputFileName = "${projectName}_v${variant.versionName}.apk"
                 }
             }

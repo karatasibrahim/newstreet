@@ -12,7 +12,7 @@ import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-void main() async{
+void main() async {
   setupLocator();
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
@@ -29,10 +29,9 @@ void main() async{
             create: (context) => SelectLocationOnMapProvider()),
       ],
       child: EasyLocalization(
-        supportedLocales: LanguagesManager.instance.supportedLocales,
+          supportedLocales: LanguagesManager.instance.supportedLocales,
           path: TextConstants.LANGUAGE_PATH,
-          child: TaxiApp()
-      ),
+          child: TaxiApp()),
     ));
   });
 }
@@ -49,7 +48,6 @@ class TaxiApp extends StatelessWidget {
             supportedLocales: context.supportedLocales,
             theme: context.themeData,
             locale: context.locale,
-            home: Splash()
-        ));
+            home: Splash()));
   }
 }
